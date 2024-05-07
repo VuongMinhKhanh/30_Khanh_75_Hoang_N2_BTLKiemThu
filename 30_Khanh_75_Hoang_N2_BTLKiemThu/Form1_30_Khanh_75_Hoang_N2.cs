@@ -1245,7 +1245,8 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             //nhấn nút logout
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"hogwarts-theme\"]/div[8]/div[2]/div/div[1]/div/div/div/ul/li[3]/a")).Click();
             Thread.Sleep(3000);
-            if(driver_30_Khanh_75_Hoang.Url == "https://himevn.com/")
+            //*[@id="hogwarts-theme"]/div[8]/div[2]/div/div[1]/div/div/div/ul/li[3]/a
+            if (driver_30_Khanh_75_Hoang.Url == "https://himevn.com/")
             //vào lại trang https://himevn.com/account xem có vào được không
             driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/account");
 
@@ -1387,7 +1388,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.Name("add")).Click();
             Thread.Sleep(2000);
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("btnToCart")).Click();
-            //Gửi số lượng là 2
+            //Gửi số lượng là 1000000
             Thread.Sleep(1000);
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).Clear();
             Thread.Sleep(1000);
@@ -1422,7 +1423,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.Name("add")).Click();
             Thread.Sleep(2000);
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("btnToCart")).Click();
-            //Gửi số lượng là 2
+            //Gửi số lượng là -10
             Thread.Sleep(1000);
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).Clear();
             Thread.Sleep(1000);
@@ -1650,7 +1651,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.Name("add")).Click();
             Thread.Sleep(2000);
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("btnToCart")).Click();
-            //Gửi số lượng là 2
+            //Gửi số lượng là 0
             Thread.Sleep(1000);
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).Clear();
             Thread.Sleep(1000);
@@ -1661,6 +1662,126 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             Thread.Sleep(1000);
 
 
+        }
+
+        private void btTimKiemTC2_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(2000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("siadihsabdsh");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC1_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("Chân");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" váy");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" xếp");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" li");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC3_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC4_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("Váy");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC5_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("Váy+ Đầm");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC6_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("Váy+ Đầm+ Quần");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC7_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("@");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(Keys.Enter);
+        }
+
+        private void btTimKiemTC8_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/search?type=product
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/search?type=product");
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(500);
+            for(int i=0;i<10;i++)
+            {
+                driver_30_Khanh_75_Hoang.FindElement(By.ClassName("search_box")).SendKeys("auishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauish");
+                Thread.Sleep(500);
+            }    
+            
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("search_box")).SendKeys(Keys.Enter);
         }
     }
 }

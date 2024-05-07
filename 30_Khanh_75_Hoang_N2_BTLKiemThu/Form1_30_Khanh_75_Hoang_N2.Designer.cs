@@ -74,10 +74,20 @@
             this.btGioHangTC3_75_Hoang = new System.Windows.Forms.Button();
             this.btGioHangTC2_75_Hoang = new System.Windows.Forms.Button();
             this.btGioHangTC1_75_Hoang = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btTimKiemTC5_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC4_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC3_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC2_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC1_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC6_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC7_75_Hoang = new System.Windows.Forms.Button();
+            this.btTimKiemTC8_75_Hoang = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1_tc1
@@ -476,16 +486,16 @@
             this.groupBox4.Controls.Add(this.btGioHangTC1_75_Hoang);
             this.groupBox4.Location = new System.Drawing.Point(1087, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(376, 681);
+            this.groupBox4.Size = new System.Drawing.Size(310, 681);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chức năng 4: Quản lý giỏ hàng";
             // 
             // btGioHangTC7_75_Hoang
             // 
-            this.btGioHangTC7_75_Hoang.Location = new System.Drawing.Point(187, 120);
+            this.btGioHangTC7_75_Hoang.Location = new System.Drawing.Point(166, 171);
             this.btGioHangTC7_75_Hoang.Name = "btGioHangTC7_75_Hoang";
-            this.btGioHangTC7_75_Hoang.Size = new System.Drawing.Size(176, 88);
+            this.btGioHangTC7_75_Hoang.Size = new System.Drawing.Size(146, 88);
             this.btGioHangTC7_75_Hoang.TabIndex = 20;
             this.btGioHangTC7_75_Hoang.Text = "Xóa một sản phẩm bằng số lượng";
             this.btGioHangTC7_75_Hoang.UseVisualStyleBackColor = true;
@@ -495,28 +505,27 @@
             // 
             this.btGioHangTC13_75_Hoang.Location = new System.Drawing.Point(5, 590);
             this.btGioHangTC13_75_Hoang.Name = "btGioHangTC13_75_Hoang";
-            this.btGioHangTC13_75_Hoang.Size = new System.Drawing.Size(365, 85);
+            this.btGioHangTC13_75_Hoang.Size = new System.Drawing.Size(232, 85);
             this.btGioHangTC13_75_Hoang.TabIndex = 19;
-            this.btGioHangTC13_75_Hoang.Text = "Đăng nhập vào thêm sản phẩm vào giỏ hàng sau đó logout kiểm tra giỏ hàng";
+            this.btGioHangTC13_75_Hoang.Text = "TC13:GioHang";
             this.btGioHangTC13_75_Hoang.UseVisualStyleBackColor = true;
             this.btGioHangTC13_75_Hoang.Click += new System.EventHandler(this.btGioHangTC13_75_Hoang_Click);
             // 
             // btGioHangTC12_75_Hoang
             // 
-            this.btGioHangTC12_75_Hoang.Location = new System.Drawing.Point(187, 428);
+            this.btGioHangTC12_75_Hoang.Location = new System.Drawing.Point(166, 464);
             this.btGioHangTC12_75_Hoang.Name = "btGioHangTC12_75_Hoang";
-            this.btGioHangTC12_75_Hoang.Size = new System.Drawing.Size(176, 160);
+            this.btGioHangTC12_75_Hoang.Size = new System.Drawing.Size(131, 124);
             this.btGioHangTC12_75_Hoang.TabIndex = 18;
-            this.btGioHangTC12_75_Hoang.Text = "Thêm hàng vào giỏ sau đó đăng xuất rồi vào lại để kiểm tra số lượng sản phẩm tron" +
-    "g giỏ hàng";
+            this.btGioHangTC12_75_Hoang.Text = "TC12:GioHang";
             this.btGioHangTC12_75_Hoang.UseVisualStyleBackColor = true;
             this.btGioHangTC12_75_Hoang.Click += new System.EventHandler(this.btGioHangTC12_75_Hoang_Click);
             // 
             // btGioHangTC11_75_Hoang
             // 
-            this.btGioHangTC11_75_Hoang.Location = new System.Drawing.Point(187, 322);
+            this.btGioHangTC11_75_Hoang.Location = new System.Drawing.Point(166, 368);
             this.btGioHangTC11_75_Hoang.Name = "btGioHangTC11_75_Hoang";
-            this.btGioHangTC11_75_Hoang.Size = new System.Drawing.Size(155, 95);
+            this.btGioHangTC11_75_Hoang.Size = new System.Drawing.Size(146, 95);
             this.btGioHangTC11_75_Hoang.TabIndex = 17;
             this.btGioHangTC11_75_Hoang.Text = "Xem giỏ hàng khi giỏ hàng có sản phẩm";
             this.btGioHangTC11_75_Hoang.UseVisualStyleBackColor = true;
@@ -524,9 +533,9 @@
             // 
             // btGioHangTC10_75_Hoang
             // 
-            this.btGioHangTC10_75_Hoang.Location = new System.Drawing.Point(187, 214);
+            this.btGioHangTC10_75_Hoang.Location = new System.Drawing.Point(166, 265);
             this.btGioHangTC10_75_Hoang.Name = "btGioHangTC10_75_Hoang";
-            this.btGioHangTC10_75_Hoang.Size = new System.Drawing.Size(155, 95);
+            this.btGioHangTC10_75_Hoang.Size = new System.Drawing.Size(146, 95);
             this.btGioHangTC10_75_Hoang.TabIndex = 16;
             this.btGioHangTC10_75_Hoang.Text = "Xem giỏ hàng khi giỏ hàng trống";
             this.btGioHangTC10_75_Hoang.UseVisualStyleBackColor = true;
@@ -534,9 +543,9 @@
             // 
             // btGioHangTC6_75_Hoang
             // 
-            this.btGioHangTC6_75_Hoang.Location = new System.Drawing.Point(187, 29);
+            this.btGioHangTC6_75_Hoang.Location = new System.Drawing.Point(166, 80);
             this.btGioHangTC6_75_Hoang.Name = "btGioHangTC6_75_Hoang";
-            this.btGioHangTC6_75_Hoang.Size = new System.Drawing.Size(155, 85);
+            this.btGioHangTC6_75_Hoang.Size = new System.Drawing.Size(146, 85);
             this.btGioHangTC6_75_Hoang.TabIndex = 15;
             this.btGioHangTC6_75_Hoang.Text = "Xóa một sản phẩm bằng nút xóa";
             this.btGioHangTC6_75_Hoang.UseVisualStyleBackColor = true;
@@ -592,11 +601,109 @@
             this.btGioHangTC1_75_Hoang.UseVisualStyleBackColor = true;
             this.btGioHangTC1_75_Hoang.Click += new System.EventHandler(this.btGioHangTC1_75_Hoang_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btTimKiemTC8_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC7_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC6_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC5_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC4_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC3_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC2_75_Hoang);
+            this.groupBox5.Controls.Add(this.btTimKiemTC1_75_Hoang);
+            this.groupBox5.Location = new System.Drawing.Point(1403, 19);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(223, 668);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Chức năng 5:Tìm kiếm";
+            // 
+            // btTimKiemTC5_75_Hoang
+            // 
+            this.btTimKiemTC5_75_Hoang.Location = new System.Drawing.Point(5, 265);
+            this.btTimKiemTC5_75_Hoang.Name = "btTimKiemTC5_75_Hoang";
+            this.btTimKiemTC5_75_Hoang.Size = new System.Drawing.Size(155, 64);
+            this.btTimKiemTC5_75_Hoang.TabIndex = 4;
+            this.btTimKiemTC5_75_Hoang.Text = "Tìm kiếm 2 từ khóa";
+            this.btTimKiemTC5_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC5_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC5_75_Hoang_Click);
+            // 
+            // btTimKiemTC4_75_Hoang
+            // 
+            this.btTimKiemTC4_75_Hoang.Location = new System.Drawing.Point(5, 196);
+            this.btTimKiemTC4_75_Hoang.Name = "btTimKiemTC4_75_Hoang";
+            this.btTimKiemTC4_75_Hoang.Size = new System.Drawing.Size(155, 63);
+            this.btTimKiemTC4_75_Hoang.TabIndex = 3;
+            this.btTimKiemTC4_75_Hoang.Text = "Tìm kiếm theo từ khóa";
+            this.btTimKiemTC4_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC4_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC4_75_Hoang_Click);
+            // 
+            // btTimKiemTC3_75_Hoang
+            // 
+            this.btTimKiemTC3_75_Hoang.Location = new System.Drawing.Point(5, 144);
+            this.btTimKiemTC3_75_Hoang.Name = "btTimKiemTC3_75_Hoang";
+            this.btTimKiemTC3_75_Hoang.Size = new System.Drawing.Size(155, 46);
+            this.btTimKiemTC3_75_Hoang.TabIndex = 2;
+            this.btTimKiemTC3_75_Hoang.Text = "Tìm kiếm trống";
+            this.btTimKiemTC3_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC3_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC3_75_Hoang_Click);
+            // 
+            // btTimKiemTC2_75_Hoang
+            // 
+            this.btTimKiemTC2_75_Hoang.Location = new System.Drawing.Point(5, 77);
+            this.btTimKiemTC2_75_Hoang.Name = "btTimKiemTC2_75_Hoang";
+            this.btTimKiemTC2_75_Hoang.Size = new System.Drawing.Size(155, 64);
+            this.btTimKiemTC2_75_Hoang.TabIndex = 1;
+            this.btTimKiemTC2_75_Hoang.Text = "Tìm sản phẩm không có";
+            this.btTimKiemTC2_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC2_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC2_75_Hoang_Click);
+            // 
+            // btTimKiemTC1_75_Hoang
+            // 
+            this.btTimKiemTC1_75_Hoang.Location = new System.Drawing.Point(6, 29);
+            this.btTimKiemTC1_75_Hoang.Name = "btTimKiemTC1_75_Hoang";
+            this.btTimKiemTC1_75_Hoang.Size = new System.Drawing.Size(154, 49);
+            this.btTimKiemTC1_75_Hoang.TabIndex = 0;
+            this.btTimKiemTC1_75_Hoang.Text = "Tìm đúng";
+            this.btTimKiemTC1_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC1_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC1_75_Hoang_Click);
+            // 
+            // btTimKiemTC6_75_Hoang
+            // 
+            this.btTimKiemTC6_75_Hoang.Location = new System.Drawing.Point(6, 342);
+            this.btTimKiemTC6_75_Hoang.Name = "btTimKiemTC6_75_Hoang";
+            this.btTimKiemTC6_75_Hoang.Size = new System.Drawing.Size(155, 64);
+            this.btTimKiemTC6_75_Hoang.TabIndex = 5;
+            this.btTimKiemTC6_75_Hoang.Text = "Tìm kiếm >2 từ khóa";
+            this.btTimKiemTC6_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC6_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC6_75_Hoang_Click);
+            // 
+            // btTimKiemTC7_75_Hoang
+            // 
+            this.btTimKiemTC7_75_Hoang.Location = new System.Drawing.Point(6, 412);
+            this.btTimKiemTC7_75_Hoang.Name = "btTimKiemTC7_75_Hoang";
+            this.btTimKiemTC7_75_Hoang.Size = new System.Drawing.Size(155, 64);
+            this.btTimKiemTC7_75_Hoang.TabIndex = 6;
+            this.btTimKiemTC7_75_Hoang.Text = "Tìm kiếm ký tự đặt biệt";
+            this.btTimKiemTC7_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC7_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC7_75_Hoang_Click);
+            // 
+            // btTimKiemTC8_75_Hoang
+            // 
+            this.btTimKiemTC8_75_Hoang.Location = new System.Drawing.Point(6, 481);
+            this.btTimKiemTC8_75_Hoang.Name = "btTimKiemTC8_75_Hoang";
+            this.btTimKiemTC8_75_Hoang.Size = new System.Drawing.Size(155, 64);
+            this.btTimKiemTC8_75_Hoang.TabIndex = 7;
+            this.btTimKiemTC8_75_Hoang.Text = "Tìm kiếm chuỗi dài";
+            this.btTimKiemTC8_75_Hoang.UseVisualStyleBackColor = true;
+            this.btTimKiemTC8_75_Hoang.Click += new System.EventHandler(this.btTimKiemTC8_75_Hoang_Click);
+            // 
             // Form1_30_Khanh_75_Hoang_N2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1462, 692);
+            this.ClientSize = new System.Drawing.Size(1658, 692);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -609,6 +716,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -661,6 +769,15 @@
         private System.Windows.Forms.Button btGioHangTC1_75_Hoang;
         private System.Windows.Forms.Button btGioHangTC13_75_Hoang;
         private System.Windows.Forms.Button btGioHangTC7_75_Hoang;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btTimKiemTC5_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC4_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC3_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC2_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC1_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC8_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC7_75_Hoang;
+        private System.Windows.Forms.Button btTimKiemTC6_75_Hoang;
     }
 }
 
