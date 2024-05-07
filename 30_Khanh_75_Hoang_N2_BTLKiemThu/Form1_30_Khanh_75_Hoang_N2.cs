@@ -1462,7 +1462,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.CssSelector("#cartformpage > div:nth-child(1) > div > div > div.item > div.last > div > a > img")).Click();  
         }
 
-        private void btGioHangTC9_75_Hoang_Click(object sender, EventArgs e)
+        private void btGioHangTC10_75_Hoang_Click(object sender, EventArgs e)
         {
             //vào https://himevn.com/
             driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
@@ -1473,7 +1473,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("linktocheckout")).Click();
         }
 
-        private void btGioHangTC10_75_Hoang_Click(object sender, EventArgs e)
+        private void btGioHangTC11_75_Hoang_Click(object sender, EventArgs e)
         {
             //vào https://himevn.com/
             driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
@@ -1506,7 +1506,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("linktocheckout")).Click();
         }
 
-        private void btGioHangTC11_75_Hoang_Click(object sender, EventArgs e)
+        private void btGioHangTC12_75_Hoang_Click(object sender, EventArgs e)
         {
             //vào https://himevn.com/account/login
             driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/account/login");
@@ -1570,7 +1570,7 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
 
         }
 
-        private void btGioHangTC12_75_Hoang_Click(object sender, EventArgs e)
+        private void btGioHangTC13_75_Hoang_Click(object sender, EventArgs e)
         {
             //vào https://himevn.com/account/login
             driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/account/login");
@@ -1624,6 +1624,43 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"header\"]/div/div/div[4]/div/div/div[3]/div")).Click();
             Thread.Sleep(1000);
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("linktocheckout")).Click();
+        }
+
+        private void btGioHangTC7_75_Hoang_Click(object sender, EventArgs e)
+        {
+            //vào https://himevn.com/
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
+            //click vào icon tìm kiếm
+            Thread.Sleep(3000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
+            //Nhập vào thanh tìm kiếm
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys("Chân");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" váy");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" xếp");
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" li");
+            Thread.Sleep(3000);
+            //nhấn vào ảnh sản phẩm tìm kiếm
+            driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"ajaxSearchResults-3\"]/div/div[1]/div[1]/a/img")).Click();
+            Thread.Sleep(3000);
+            //click vào nút thêm vào giỏ hàng
+            driver_30_Khanh_75_Hoang.FindElement(By.Name("add")).Click();
+            Thread.Sleep(2000);
+            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("btnToCart")).Click();
+            //Gửi số lượng là 2
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).Clear();
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).SendKeys("0");
+            //nhấn enter
+            Thread.Sleep(1000);
+            driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).SendKeys(Keys.Enter);
+            Thread.Sleep(1000);
+
+
         }
     }
 }
