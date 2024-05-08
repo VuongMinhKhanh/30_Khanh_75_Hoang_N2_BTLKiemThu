@@ -1567,8 +1567,6 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"header\"]/div/div/div[4]/div/div/div[3]/div")).Click();
             Thread.Sleep(1000);
             driver_30_Khanh_75_Hoang.FindElement(By.ClassName("linktocheckout")).Click();
-
-
         }
 
         private void btGioHangTC13_75_Hoang_Click(object sender, EventArgs e)
