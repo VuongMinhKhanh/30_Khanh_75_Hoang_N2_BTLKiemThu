@@ -1,0 +1,12 @@
+﻿TEST CASE, THUỘC TÍNH, "Họ tên", "Số điện thoại", "Giới tính", "Ngày sinh", "Email", "Mật khẩu", KẾT QUẢ
+1, Đăng ký thành công, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29@gmail.com", "Admin@123", PASS
+2, Đăng ký thiếu Họ tên, "", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29@gmail.com", "Admin@123", FAIL
+3, Đăng ký thiếu Số điện thoại, "Khánh Vương", "", "Nam", "02/09/2003", "vuongminhkhanh29@gmail.com", "Admin@123", FAIL
+4, Đăng ký thiếu Giới tính, "Khánh Vương", "0912345678", "", "02/09/2003", "vuongminhkhanh29@gmail.com", "Admin@123", PASS
+5, Đăng ký thiếu Ngày sinh, "Khánh Vương", "0912345678", "Nam", "", "vuongminhkhanh29@gmail.com", "Admin@123", FAIL
+6, Đăng ký thiếu Email, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "", "Admin@123", FAIL
+7, Đăng ký thiếu Mật khẩu, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29@gmail.com", "", FAIL
+8, Đăng ký mật khẩu thiếu bảo mật (chỉ có số), "Khánh Vương", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29@gmail.com", "admin", PASS
+9, Đăng ký Email thiếu dấu “@”, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29", "Admin@123", FAIL
+10, Đăng ký Email thiếu phần trước “@”, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "@vuongminhkhanh29", "Admin@123", FAIL
+11, Đăng ký Email thiếu phần sau “@”, "Khánh Vương", "0912345678", "Nam", "02/09/2003", "vuongminhkhanh29@", "Admin@123", FAIL

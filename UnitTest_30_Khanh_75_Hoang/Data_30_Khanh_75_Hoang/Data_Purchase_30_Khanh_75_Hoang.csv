@@ -1,0 +1,9 @@
+﻿TEST CASE,THUỘC TÍNH,Sản phẩm,Họ tên,Email,Số điện thoại,Địa chỉ,Tỉnh/Thành,Quận/Huyện,Kích cỡ,Số lượng,Phương thức thanh toán,Mã giảm giá,KẾT QUẢ
+1,Mua hàng mà không có sản phẩm,,"","","","","","","","","","",FAIL
+2,Mua 1 sản phẩm,"Áo tay bồng có nơ","Khánh","vuongminhkhanh29@gmail.com","0912345678","Khu dân cư Nhơn Đức","Hồ Chí Minh","Huyện Nhà Bè","","","","",PASS
+3,Mua 1 sản phẩm thiếu SĐT người nhận,"Áo tay bồng có nơ","Khánh","vuongminhkhanh29@gmail.com","","Khu dân cư Nhơn Đức","Hồ Chí Minh","Huyện Nhà Bè","","","","",FAIL
+4,Mua 1 sản phẩm thiếu chọn Tỉnh/Thành,"Áo tay bồng có nơ","Khánh","vuongminhkhanh29@gmail.com","0912345678","Khu dân cư Nhơn Đức","","","",FAIL
+5,Mua 1 sản phẩm với số lượng vượt tồn kho,"Áo tay bồng có nơ","","","","","","","5","","",FAIL
+6,Mua 1 sản phẩm với size M,"Áo tay bồng có nơ","Khánh","vuongminhkhanh29@gmail.com","0912345678","Khu dân cư Nhơn Đức","Hồ Chí Minh","Huyện Nhà Bè","M","","","",PASS
+7,Mua 1 sản phẩm với mã giảm giá sai,"Áo tay bồng có nơ","Khánh","vuongminhkhanh29@gmail.com","0912345678","Khu dân cư Nhơn Đức","Hồ Chí Minh","Huyện Nhà Bè","","","COD","happycoupon",FAIL
+8,Mua 2 sản phẩm khác nhau,"Áo tay bồng có nơ, Áo thun nhún vai","Khánh","vuongminhkhanh29@gmail.com","0912345678","Khu dân cư Nhơn Đức","Hồ Chí Minh","Huyện Nhà Bè","","","Internet banking","",PASS
