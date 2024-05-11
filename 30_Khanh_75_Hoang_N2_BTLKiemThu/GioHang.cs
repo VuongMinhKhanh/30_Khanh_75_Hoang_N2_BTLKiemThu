@@ -125,47 +125,35 @@ namespace _30_Khanh_75_Hoang_N2_BTLKiemThu
             driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).SendKeys(Keys.Enter);
             Thread.Sleep(1000);
             string sl;
-            try
-            {
-                sl = (driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"updates_1122386468\"]")).GetAttribute("value"));
-            }
-            //nếu không tìm thấy số
-            catch (NoSuchElementException)
-            {
-                sl= driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"layout-cart\"]/div/div/div[2]/div/div/div/p")).Text;
-                driver_30_Khanh_75_Hoang.Quit();
-                return sl;
-            }
+            sl = driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"header\"]/div/div/div[4]/div/div/div[3]/div/span/span")).Text;
             driver_30_Khanh_75_Hoang.Quit();
             return sl;
         }
         public string xoaSanPham_30_Khanh_75_Hoang(string tenSp)
         {
-            //vào https://himevn.com/
-            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/");
-            //click vào icon tìm kiếm
-            Thread.Sleep(3000);
-            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("svg-icon-search")).Click();
-            //Nhập vào thanh tìm kiếm
-            Thread.Sleep(500);
-            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(tenSp);
-            Thread.Sleep(1000);
-            driver_30_Khanh_75_Hoang.FindElement(By.Id("inputSearchAuto-3")).SendKeys(" ");
-            Thread.Sleep(1000);
-            //nhấn vào ảnh sản phẩm tìm kiếm
-            driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"ajaxSearchResults-3\"]/div/div[1]/div[1]/a/img")).Click();
-            Thread.Sleep(3000);
-            //click vào nút thêm vào giỏ hàng
-            driver_30_Khanh_75_Hoang.FindElement(By.Name("add")).Click();
-            Thread.Sleep(2000);
-            driver_30_Khanh_75_Hoang.FindElement(By.ClassName("btnToCart")).Click();
-            Thread.Sleep(1000);
-            // bấm vào nút xóa
-            driver_30_Khanh_75_Hoang.FindElement(By.CssSelector("#cartformpage > div:nth-child(1) > div > div > div.item > div.last > div > a > img")).Click();
-            string thongBao;
-            thongBao = driver_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"layout-cart\"]/div/div/div[2]/div/div/div/p")).Text;
-            driver_30_Khanh_75_Hoang.Quit();
-            return thongBao;
+            //vào giỏ hàng
+            driver_30_Khanh_75_Hoang.Navigate().GoToUrl("https://himevn.com/cart");
+            string trangThai = "xóa thất bại";
+            //Lấy danh sách sản phẩm trong giỏ
+            IReadOnlyCollection<IWebElement> elements_30_Khanh_75_Hoang = driver_30_Khanh_75_Hoang.FindElements(By.ClassName("item"));
+            //kiểm tra có sản phẩm trong giỏ không
+            int index = 1;
+            if (elements_30_Khanh_75_Hoang.Count > 0)
+                foreach (IWebElement element_30_Khanh_75_Hoang in elements_30_Khanh_75_Hoang)
+                {
+                    // kiểm tra có sản phẩm không
+                    if (element_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"cartformpage\"]/div[1]/div/div[" + index + "]/div[2]/div[1]/h3/a")).Text == tenSp)
+                    {//*[@id="cartformpage"]/div[1]/div/div[2]/div[2]/div[1]/h3/a
+                        //nếu có thì xóa
+                        element_30_Khanh_75_Hoang.FindElement(By.XPath("//*[@id=\"cartformpage\"]/div[1]/div/div[" + index + "]/div[2]/div[2]/div/a")).Click();
+                        //*[@id="cartformpage"]/div[1]/div/div[2]/div[2]/div[2]/div/a
+                        trangThai = "xóa thành công";
+                        return trangThai;
+                    }
+                    index++;
+                }
+            driver_30_Khanh_75_Hoang.Quit(); 
+            return trangThai;
         }
         public string TinhTongTien_30_Khanh_75_Hoang(string tenSp, int soLuong)
         {

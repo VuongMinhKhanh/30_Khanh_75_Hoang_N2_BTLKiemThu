@@ -21,7 +21,9 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
             expected_30_Khanh_75_Hoang = "Chân váy xếp li";
             string tenSP = "Chân váy xếp li";
+            //thêm một sản phẩm vào giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.ThemMotSanPham_30_Khanh_75_Hoang(tenSP);
+            //xem giỏ hàng kiểm tra giỏ hàng có sản phẩm chưa
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]// TC2: tenSP="Chân váy xếp li" kq = "Sản phẩm bạn vừa mua đã vượt quá tồn kho"
@@ -30,6 +32,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
             expected_30_Khanh_75_Hoang = "Sản phẩm bạn vừa mua đã vượt quá tồn kho";
             string tenSP = "Chân váy xếp li";
+            //Thực hiện thêm sản phẩm trùng nhau sau đó lấy thông báo
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.ThemHaiSanPhamTrungNhau_30_Khanh_75_Hoang(tenSP);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -40,6 +43,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = 2;
             expected_30_Khanh_75_Hoang = "2";
             string tenSP = "Chân váy xếp li";
+            //Cập nhâtj số lượng trả về số lượng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.CapNhatSoLuongSanPham_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -50,6 +54,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = 1000000;
             expected_30_Khanh_75_Hoang = "1000000";
             string tenSP = "Chân váy xếp li";
+            //Cập nhâtj số lượng trả về số lượng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.CapNhatSoLuongSanPham_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -60,15 +65,21 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = -10;
             expected_30_Khanh_75_Hoang = "1";
             string tenSP = "Chân váy xếp li";
+            //Cập nhâtj số lượng trả về số lượng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.CapNhatSoLuongSanPham_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
-        [TestMethod]// TC6: tenSP="Chân váy xếp li" kq = Giỏ hàng của bạn đang trống
+        [TestMethod]// TC6: tenSP="Chân váy xếp li" kq = :Xóa thành công"
         public void Test_xoa_san_pham_30_Khanh_75_Hoang()
         {
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
-            expected_30_Khanh_75_Hoang = "Giỏ hàng của bạn đang trống";
+            expected_30_Khanh_75_Hoang = "xóa thành công";
             string tenSP = "Chân váy xếp li";
+            //Thêm một sản phẩm
+            test_30_Khanh_75_Hoang.ThemSanPham_30_Khanh_75_Hoang("Chân váy mini");
+            //Thêm một sản phẩm
+            test_30_Khanh_75_Hoang.ThemSanPham_30_Khanh_75_Hoang(tenSP);
+            //xóa sản phẩm sau đó
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.xoaSanPham_30_Khanh_75_Hoang(tenSP);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -79,6 +90,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = 0;
             expected_30_Khanh_75_Hoang = "0";
             string tenSP = "Chân váy xếp li";
+            //Cập nhâtj số lượng trả về số lượng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.CapNhatSoLuongSanPham_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -89,6 +101,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = 1;
             expected_30_Khanh_75_Hoang = "499000";
             string tenSP = "Chân váy xếp li";
+            //Thêm số lượng và trả về tổng tiền trong giỏ hàng
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.TinhTongTien_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -99,6 +112,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             int soLuong = 1000000;
             expected_30_Khanh_75_Hoang = "499000000000";
             string tenSP = "Chân váy xếp li";
+            //Thêm số lượng và trả về tổng tiền trong giỏ hàng
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.TinhTongTien_30_Khanh_75_Hoang(tenSP, soLuong);
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -107,6 +121,7 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
         {
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
             expected_30_Khanh_75_Hoang = "0";
+            //Kiêm tra giỏ hàng trả về số lượng hàng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.XemGioHang_30_Khanh_75_Hoang();
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
@@ -116,12 +131,14 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
             expected_30_Khanh_75_Hoang = "1";
             string tenSP = "Chân váy xếp li";
+            //Thêm sản phẩm vào giỏ
             test_30_Khanh_75_Hoang.ThemSanPham_30_Khanh_75_Hoang(tenSP);
+            //Kiêm tra giỏ hàng trả về số lượng hàng trong giỏ
             actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.XemGioHang_30_Khanh_75_Hoang().ToString();
             Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]// TC12: tenSP="Chân váy xếp li" soLuong = 1 kq = 1
-        public void Test_Xem_SP_Khi_Thoat_web_30_Khanh_75_Hoang()
+        public void Test_Xem_SP_Khi_Logout_Dang_Nhap_30_Khanh_75_Hoang()
         {
             string expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
             expected_30_Khanh_75_Hoang = "1";

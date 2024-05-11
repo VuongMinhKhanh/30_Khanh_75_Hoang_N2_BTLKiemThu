@@ -20,82 +20,81 @@ namespace GioHangTester_30_Khanh_75_Hoang_N2_NUNIT
         [TestMethod]
         public void tc1_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "Chân váy xếp li";
-            expected ="có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "Chân váy xếp li";
+            expected_30_Khanh_75_Hoang ="có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc2_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "siadihsabdsh";
-            expected = "không có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "siadihsabdsh";
+            expected_30_Khanh_75_Hoang = "không có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc3_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "";
-            expected = "không có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "";
+            expected_30_Khanh_75_Hoang = "không có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc4_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "Váy";
-            expected = "có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "Váy";
+            expected_30_Khanh_75_Hoang = "có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc5_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "Váy+ Đầm";
-            expected = "có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "Váy+ Đầm";
+            expected_30_Khanh_75_Hoang = "có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc6_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "Váy+ Đầm+ Quần";
-            expected = "có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "Váy+ Đầm+ Quần";
+            expected_30_Khanh_75_Hoang = "có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc7_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "@";
-            expected = "không có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            string tenSP_30_Khanh_75_Hoang, expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang = "không có";
+            tenSP_30_Khanh_75_Hoang = "@";
+            expected_30_Khanh_75_Hoang = "không có";
+            if (test_30_Khanh_75_Hoang.timKiem(tenSP_30_Khanh_75_Hoang) == true)
+                actual_30_Khanh_75_Hoang = "có";
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
         [TestMethod]
         public void tc8_30_Khanh_75_Hoang()
         {
-            string tenSP, expected, actual = "không có";
-            tenSP = "auishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiu";
-            expected = "không có";
-            if (test_30_Khanh_75_Hoang.timKiem(tenSP) == true)
-                actual = "có";
-            Assert.AreEqual(expected, actual);
+            bool expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang;
+            string tenSP_30_Khanh_75_Hoang = "auishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdiuauishduiashduiashdashdauishduiashduiashdashdiuauishduiashduiashdashd";
+            expected_30_Khanh_75_Hoang = true;
+            actual_30_Khanh_75_Hoang = test_30_Khanh_75_Hoang.chiuTai_30_Khanh_75_Hoang(tenSP_30_Khanh_75_Hoang);
+            Assert.AreEqual(expected_30_Khanh_75_Hoang, actual_30_Khanh_75_Hoang);
         }
     }
 }
