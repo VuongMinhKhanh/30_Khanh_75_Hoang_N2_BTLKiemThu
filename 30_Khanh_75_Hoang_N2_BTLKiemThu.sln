@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30_Khanh_75_Hoang_N2_BTLKie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester_30_Khanh_75_Hoang_N2_NUNIT", "GioHangTester_30_Khanh_75_Hoang_N2_NUNIT\Tester_30_Khanh_75_Hoang_N2_NUNIT.csproj", "{E00FD0A1-AF97-4FF8-8021-9CC744682414}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_30_Khanh_75_Hoang", "..\..\30_Khanh_75_Hoang_N2_BTLKiemThu\UnitTest_30_Khanh_75_Hoang\UnitTest_30_Khanh_75_Hoang.csproj", "{E3B7239C-31E0-4304-9957-4573D1FEDDB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_30_Khanh_75_Hoang", "UnitTest_30_Khanh_75_Hoang\UnitTest_30_Khanh_75_Hoang.csproj", "{E3B7239C-31E0-4304-9957-4573D1FEDDB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

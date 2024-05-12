@@ -104,7 +104,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\kiemthu\30_Khanh_75_Hoang_N2_BTLKiemThu\30_Khanh_75_Hoang_N2_BTLKiemThu\30_Khanh_75_Hoang_N2_BTLKiemThu.csproj">
+    <ProjectReference Include="..\30_Khanh_75_Hoang_N2_BTLKiemThu\30_Khanh_75_Hoang_N2_BTLKiemThu.csproj">
       <Project>{d48f3c90-d7a1-4eaf-97fa-0d855f89615a}</Project>
       <Name>30_Khanh_75_Hoang_N2_BTLKiemThu</Name>
     </ProjectReference>
